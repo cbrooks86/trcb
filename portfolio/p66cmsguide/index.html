@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+    <title>CMS Guide</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/prettify.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"> -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+    </script>
+    <script> 
+        $(function(){
+            $("#header").load("header.html"); 
+            $("#footer").load("footer.html"); 
+        });
+    </script> 
+</head>
+
+<body>
+    <div id="header"></div>
+    <div id="content" class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-md-3" style="padding:0;">
+                <div class="menu-holder" >
+                    <ul class="main-menu">
+                        <li><a href="#addmarketer" class="active"><i class="fa fa-angle-right" aria-hidden="true"></i>Adding a Marketer</a></li>
+                        <li><a href="#existmarketer"><i class="fa fa-angle-right" aria-hidden="true"></i>Editing an Existing Marketer</a></li>
+                        <li><a href="#addprod"><i class="fa fa-angle-right" aria-hidden="true"></i>Adding a Product</a></li>
+                        <li><a href="#existprod"><i class="fa fa-angle-right" aria-hidden="true"></i>Editing an Existing Product</a></li>
+                        <li><a href="#replacedata"><i class="fa fa-angle-right" aria-hidden="true"></i>Replacing Data Sheets</a></li>
+                        <!--<li><a href="#navpages"><i class="fa fa-angle-right" aria-hidden="true"></i>Finding & Editing Navigation Pages</a></li>-->
+                        <li><a href="#editurls"><i class="fa fa-angle-right" aria-hidden="true"></i>Editing URLs (Slugs)</a></li>
+                        <li><a href="#images"><i class="fa fa-angle-right" aria-hidden="true"></i>Replacing Images</a></li>
+                        <hr />
+                        <li><a href="index.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Home</a></li>
+                        <li><a href="faq.html"><i class="fa fa-angle-right" aria-hidden="true"></i>FAQ</a></li>
+                        <li><a href="videos.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Videos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-9 content">
+                <h3 id="addmarketer">Adding a Marketer</h3>
+                <p>To add a Marketer, first you want to<a href="https://dashboard.blne.app-api.services" target="_blank"> log into the Phillips 66/Kendall CMS</a>. When you're in, do the following:
+                    <ol>
+                        <li>Navigate to the marketers section by clicking the <span class="tip" data-toggle="tooltip" title="<img class='img-thumbnail' src='assets/images/marketer.png'/>">Marketer</span> button and then clicking <span class="tip" data-toggle="tooltip" title="<img class='img-thumbnail' src='assets/images/addmarketer.png'/>">Add Marketer</span>.</li>
+                        <li> Once there, add the name, country, and company you wish for the marketer's information to be stored in:</li>
+                    </ol>
+                </p>
+                <p>
+                    <img alt="Marketer Form 1" style="width:40%;height:auto;" src="assets/images/marketerform1.png" />
+                </p>
+                    <p>
+                        <ol start="3">
+                            <li>Click <strong>Save</strong>, and you'll be taken to a secondary detail screen for your Marketer. From here you want to enter as much information as possible.<br /><span class="notice">*When it comes to the latitude and longitute, I found it is easiest to use an online service such as <a href="https://www.latlong.net/" target="_blank">latlong.net</a> when the data is not supplied.</span></li>
+                        </ol>
+                    </p>
+                    <p><img alt="Marketer Form 2" style="width:80%;height:auto;" src="assets/images/marketerform2.png" /></p>
+                        <p>
+                            <ol start="3">
+                                <li>Once you are done, click <span class="tip" data-toggle="tooltip" title="<img class='img-thumbnail' src='assets/images/savemarketer.png'/>">Save Marketer</span>, and you're finished!</li>
+                            </ol>
+                        </p>
+                        <h3 id="existmarketer">Editing an Existing Marketer</h3>
+                        <p>To edit an existing Marketer, you will first want to <a href="https://dashboard.blne.app-api.services" target="_blank">log into the Phillips 66/Kendall CMS</a>. Once in:
+                            <ol>
+                                <li>Navigate to the Marketers section by clicking the <span class="tip" data-toggle="tooltip" title="<img class='img-thumbnail' src='assets/images/marketer.png'/>">Marketer</span> button.</li>
+                                <li>From there, search for your Marketer by name within the <span class="tip" data-toggle="tooltip" title="<img class='img-thumbnail' src='assets/images/searchcriteria.png'/>">Search Criteria Box</span>.<br /><strong>Be sure that you're searching within the correct brand.</strong></li>
+                            </ol>
+                            <p><img alt="Marketer Search" style="width:80%;height:auto;" src="assets/images/marketersearch.png" /></p>
+                                <ol start="3">
+                                    <li>When you find the Marketer you wish to edit, simply click the pencil icon, <svg width="15" class="jss151" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                                            <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
+                                            <path fill="none" d="M0 0h24v24H0z"></path>
+                                        </svg>, to the left of that Marketer.</li>
+                                    <li>This will bring up the Marketer detail screen. From here, update the stored information and click <span class="tip" data-toggle="tooltip" title="<img class='img-thumbnail' src='assets/images/savemarketer.png'/>">Save Marketer</span>, and you're finished!</li>
+                                </ol>
+                            </p>
+                            <h3 id="addprod">Adding a Product</h3>
+                            <p>To add a product, first you want to <a href="https://dashboard.blne.app-api.services" target="_blank">log into the Phillips 66/Kendall CMS</a>. Once in:
+                                <ol>
+                                    <li>Navigate to the Product section by clicking the <span class="tip" data-toggle="tooltip" title="<img class='img-thumbnail' src='assets/images/productinventory.png'/>">Product Inventory</span> button and then clicking <span class="tip" data-toggle="tooltip" title="<img class='img-thumbnail' src='assets/images/addnewproduct.png'/>">Add New Product</span>.</li>
+                                    <li> Once there, add the product name, slug (URL), and brand you wish for the product information to be stored in. Then click <span class="tip" data-toggle="tooltip" title="<img class='img-thumbnail' src='assets/images/save.png'/>">Save</span>.</li>
+                                </ol>
+                                <p><img alt="Add Product" style="width:40%;height:auto;" src="assets/images/addproduct.png" /></p>
+                                    <ol start="3">
+                                        <li>This will bring up the product detail screen. From here, you must update the information in each of the product tabs.</li>
+                                    </ol>
+                                    <p><img alt="Product Example" style="width:80%;height:auto;" src="assets/images/productexample.png" /></p>
+                                        <ol start="4">
+                                            <li> Description</li>
+                                            <ul>
+                                                <li>Headline - This will be the headline displayed in the hero area of the page.</li>
+                                                <li>Sub Header - This is the sub header text displayed in the right margin of the page.</li>
+                                                <li>SDS Number - Adding the SDS number will automatically add a link to the safety data sheet.</li>
+                                                <li>Content - This information can be taken from the first paragraph of the data sheet. Please remember to wrap the text in paragraph tags.<br />
+                                                    <span class="notice">*The addition of a content editor is an enhancement that we have scoped out for later delivery</span></li>
+                                                <p><h5>Example Content</h5>
+                                                    <pre class="prettyprint">
+&lt;p&gt;Phillips 66&lt;sup&gt;®&lt;/sup&gt; Coupling Grease is a high-performance, polymer-containing lithium grease developed for use in grease-lubricated flexible
+couplings, such as those commonly found in mining equipment, power plants, manufacturing plants and chemical plants. It has exceptional
+resistance to oil separation when subjected to the high centrifugal forces typically encountered with medium and high-speed gear, metallic grid
+and chain couplings.&lt;/p&gt;</pre>
+                                                </p>
+                                            </ul>
+                                            <ul>
+                                                <li>Application - This information can be taken from the applications section of the data sheet. Please remember to wrap the text in both paragraph tags and unordered (bulleted) list tags.</li>
+                                                <p><h5>Example Application</h5>
+                                                    <pre class="prettyprint">
+&lt;p&gt;                                                    
+    &lt;ul&gt;
+        &lt;li&gt;Gear, metallic grid and flexible-chain couplings&lt;/li&gt;
+        &lt;li&gt;Couplings commonly used in mining and gas field equipment&lt;/li&gt;
+        &lt;li&gt;Couplings and universal joints operating under high centrifugal forces&lt;/li&gt;
+        &lt;li&gt;Couplings used between electric motors and gearboxes in industrial and chemical plants&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/p&gt;     </pre>
+                                                </p>
+                                            </ul>
+                                            <ul>
+                                                <li>Features - This information can be taken from the features section of the data sheet. Please remember to wrap the text in both paragraph tags and unordered (bulleted) list tags.</li>
+                                                <p><h5>Example Features</h5>
+                                                    <pre class="prettyprint">
+&lt;p&gt;                                                    
+    &lt;ul&gt;
+        &lt;li&gt;Outstanding resistance to oil separation&lt;/li&gt;
+        &lt;li&gt;Excellent oxidation resistance and thermal stability&lt;/li&gt;
+        &lt;li&gt;High load-carry capacity&lt;/li&gt;
+        &lt;li&gt;Protects against rust and corrosion&lt;/li&gt;
+        &lt;li&gt;Minimizes friction and wear to help extended coupling life&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/p&gt;     </pre>
+                                                </p>
+                                            </ul>
+                                            <ul>
+                                                <li>Licenses - This information can be taken from the applications section of the data sheet. Please remember to wrap the text in both paragraph tags and unordered (bulleted) list tags.</li>
+                                                <p><h5>Example Licenses</h5>
+                                                    <pre class="prettyprint">
+&lt;p&gt;Coupling Grease meets the requirements of the following industry specifications:&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;ANSI/AGMA Standard 9001-B97, Type CG-1 &amp; CG-2 for medium and high-speed couplings&lt;/li&gt;
+&lt;/ul&gt;</pre>
+                                                </p>
+                                            </ul>
+                                        </ol>
+                                        <h5 style="margin-left: 30%">Finished Result</h5>
+                                        <img alt="Product Example 2" style="width:40%;height:auto;" src="assets/images/productexample2.png" />
+                                        <ol start="5">
+                                            <li>The Details tab allows for spec data to be easily added within the system. Content is add here as follows:</li>
+                                            <ul>
+                                                <li>Create a Specification by clicking on the <span class="tip" data-toggle="tooltip" title="<img class='img-thumbnail' src='assets/images/createspec.png'/>">Create Specification</span> button. This is required to proceed. Generally this text should match the spec groupings in your table, such as oil weights. When dont, click <span class="tip" data-toggle="tooltip" title="<img class='img-thumbnail' src='assets/images/add.png'/>">add</span>.</li>
+                                            </ul>
+                                            <p><img alt="Tech Details" style="width:80%;height:auto;" src="assets/images/techdeets.png" /></p>
+                                                <ul>
+                                                    <li>Edit your Specification adding the line item from the left column and the associated values only from the that matches the spec grouping on the data sheet.</li>
+                                                    <li>Once you're done, you can drag and drop the spec items in order using <svg width="19" class="jss151" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                                                            <path fill="none" d="M0 0h24v24H0z"></path>
+                                                            <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+                                                        </svg>, then save using the </li>
+                                                </ul>
+                                                <p><img alt="Spec Details" style="width:40%;height:auto;" src="assets/images/specdeets.png" /></p>
+                                                    <li>Product worksheets are uploaded via the Files tab. Simply select English or Spanish from the dropdown, and upload the file using the <span class="tip" data-toggle="tooltip" title="<img class='img-thumbnail' src='assets/images/upload.png'/>">Upload Data Sheet</span> button.</li>
+                                                    <p><img alt="Product Work Sheet" style="width:80%;height:auto;" src="assets/images/prodworksheets.png" /></p>
+                                                        <li>Classifications are product groupings. You can add your new product to any grouping of products on the site my adding them here. </li>
+                                        </ol>
+                                        <h3 id="existprod">Editing an Existing Product</h3>
+                                        <p>To edit an existing product, first you want to <a href="https://dashboard.blne.app-api.services" target="_blank">log into the Phillips 66/Kendall CMS</a>. Once in:
+                                            <ol>
+                                                <li>Navigate to the Product section by clicking the <span class="tip" data-toggle="tooltip" title="<img class='img-thumbnail' src='assets/images/productinventory.png'/>">Product Inventory</span> button and then searching for it using the<br /><span class="tip" data-toggle="tooltip" title="<img class='img-thumbnail' src='assets/images/searchcriteria.png'/>">Search Criteria</span> box.</li>
+                                                <li> Once there, click the pencil icon, <svg width="19" class="jss151" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path><path fill="none" d="M0 0h24v24H0z"></path></svg>, and add your edits following the steps from the <a href="#addprod">Editing an Existing Marketers</a>.</li>
+                                                <li>When completed, click the <span class="tip" data-toggle="tooltip" title="<img class='img-thumbnail' src='assets/images/slug.png'/>">Slug</span> link to make sure your changes have been implemented.</li>
+                                            </ol>
+                                            <h3 id="replacedata">Replacing Data Sheets</h3>
+                                            <p>To replace an existing data sheet, first you want to <a href="https://dashboard.blne.app-api.services" target="_blank">log into the Phillips 66/Kendall CMS</a>. Once in:
+                                            <ol>
+                                                <li>Navigate to the Product section by clicking the <span class="tip" data-toggle="tooltip" title="<img class='img-thumbnail' src='assets/images/productinventory.png'/>">Product Inventory</span> button and then searching for it using the<br /><span class="tip" data-toggle="tooltip" title="<img class='img-thumbnail' src='assets/images/searchcriteria.png'/>">Search Criteria</span> box.</li>
+                                                <li> Once there, click the pencil icon, <svg width="19" class="jss151" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path><path fill="none" d="M0 0h24v24H0z"></path></svg>, and select the <strong>Files</strong> tab.</li>
+                                                <li>Be sure to delete the file you want to replace, first, then re-add following the steps from the <a href="#addprod">Adding a Product</a> section.</li>
+                                                <li>When completed, click the <span class="tip" data-toggle="tooltip" title="<img class='img-thumbnail' src='assets/images/slug.png'/>">Slug</span> link to make sure your changes have been implemented.</li>
+                                            </ol>
+                                            <!-- <h3 id="navpages">Finding &amp; Editing Navigation Pages</h3>
+                                            <em>TBC</em>-->
+                                            <h3 id="editurls">Editing URLs (Slugs)</h3>
+                                            <p>To replace an existing Data Sheet, first you want to <a href="https://dashboard.blne.app-api.services" target="_blank">log into the Phillips 66/Kendall CMS</a>. Once in:
+                                            <ol>
+                                                <li>Navigate to the Product section by clicking the <span class="tip" data-toggle="tooltip" title="<img class='img-thumbnail' src='assets/images/productinventory.png'/>">Product Inventory</span> button and then searching for it using<br /><span class="tip" data-toggle="tooltip" title="<img class='img-thumbnail' src='assets/images/searchcriteria.png'/>">Search Criteria</span> box.</li>
+                                                <li> Once there, click the pencil icon, <svg width="19" class="jss151" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path><path fill="none" d="M0 0h24v24H0z"></path></svg>, and select the files tab.</li>
+                                                <li>Click the pencil icon, <svg width="18" class="jss151 jss156 jss858" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM5.92 19H5v-.92l9.06-9.06.92.92L5.92 19zM20.71 5.63l-2.34-2.34c-.2-.2-.45-.29-.71-.29s-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83c.39-.39.39-1.02 0-1.41z"></path></svg>,  again and change the slug name. Click the checkmakr icon, <svg width="18" class="jss151 jss858" focusable="false" viewBox="0 0 24 24" aria-hidden="true" style="color: rgb(165, 214, 167);"><path fill="none" d="M0 0h24v24H0z"></path><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path></svg>, to save your changes.</li>
+                                                <li>When completed, click the <span class="tip" data-toggle="tooltip" title="<img class='img-thumbnail' src='assets/images/slug.png'/>">Slug</span> link to make sure your changes have been implemented.</li>
+                                            </ol>
+                                            <h3 id="images">Replacing Images</h3>
+                                            <p>To replace an existing image, first you want to <a href="https://dashboard.blne.app-api.services" target="_blank">log into the Phillips 66/Kendall CMS</a>. Once in:
+                                            <ol>
+                                                <li>Navigate to the Product section by clicking the <span class="tip" data-toggle="tooltip" title="<img class='img-thumbnail' src='assets/images/productinventory.png'/>">Product Inventory</span> button and then searching for it using<br /><span class="tip" data-toggle="tooltip" title="<img class='img-thumbnail' src='assets/images/searchcriteria.png'/>">Search Criteria</span> box.</li>
+                                            
+                                            <hr />
+                            <h3 id="home"><a href="index.html">Home</a></h3>
+                            <h3 id="faq"><a href="faq.html">FAQ</a></h3>
+                            <h3 id="vids"><a href="videos.html">Videos</a></h3>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+        <a id="back-to-top" href="#header"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/prettify.js"></script>
+        <script src="assets/js/main.js"></script>
+</body>
+
+</html>

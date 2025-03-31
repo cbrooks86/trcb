@@ -1,0 +1,26 @@
+/******************************************************************************/
+/*	Main carousel 															  */
+/******************************************************************************/
+
+	/**************************************************************************/
+	/*	Main carousel / Headers												  */
+	/**************************************************************************/	
+
+		#template-main-carousel ul.template-main-carousel>li div.template-vertical-center-inner h2
+		{
+			font-size:80px;
+		}
+
+		.littlebutton
+		{
+			width: 202px !important;
+			margin: 3px 3px 3px 0px !important;
+			padding: none !important;
+		}
+		.bigbutton
+		{
+			margin-top:-23px !important;
+			margin-right:12px !important;
+			width: 417px !important;
+			padding: none !important;
+		}

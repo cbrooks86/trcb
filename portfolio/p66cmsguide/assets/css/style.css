@@ -1,0 +1,259 @@
+@charset "UTF-8";
+@import url("../fonts/flaticon.css");
+
+@font-face {
+    font-family: 'sofia_prolight';
+    src: url('../fonts/SofiaProLight-webfont.eot');
+    src: url('../fonts/SofiaProLight-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SofiaProLight-webfont.woff2') format('woff2'),
+        url('../fonts/SofiaProLight-webfont.woff') format('woff'),
+        url('../fonts/SofiaProLight-webfont.ttf') format('truetype'),
+        url('../fonts/SofiaProLight-webfont.svg#sofia_prolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*,
+body {
+    font-family: "sofia_prolight", sans-serif;
+    transition: all 0.3s ease 0.0s;
+}
+
+#header{
+    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+}
+
+.atthetop{
+    -webkit-transition: background 2s; /* For Safari 3.1 to 6.0 */
+    transition: background 2s;
+    top: 10px;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 26px;
+    left: 30px;
+    background-color: #a81226;
+    width: 32px;
+    height: 32px;
+    color: #fff;
+    text-align: center;
+    padding-top: 4px;
+    border-radius: 50px;
+    opacity: 0;
+}
+
+#back-to-top.show {
+    opacity: 1;
+}
+
+.tip {
+    font-weight: bold;
+    color: #a81226;
+}
+
+img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.content li,
+ol {
+    font-size: 17px;
+    color: #726D75;
+}
+
+.notice {
+    font-size: small;
+    font-style: italic;
+}
+
+.tooltip.in {
+    opacity: 1 !important;
+}
+
+.reg {
+    font-size: x-small;
+    vertical-align: super;
+}
+
+#back-to-top.atbottom {
+    bottom: 80px;
+}
+
+.prettyprint-inline {
+    display: inline-block !important;
+    padding: 5px !important;
+    vertical-align: middle;
+}
+
+p.inline {
+    display: inline;
+}
+
+#header {
+    background-color: #a81226;
+    color: #ffffff;
+    padding-top: 12px;
+    padding-bottom: 15px;
+}
+
+.doc-title {
+    font-size: 22px;
+}
+
+.doc-title .glyph-icon {
+    margin-right: 15px;
+    display: inline-block;
+    font-size: 22px;
+}
+
+.menu-holder {
+    background-color: #ffffff;
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    /*border-right: 1px solid #c6ddf8;*/
+    transition: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.menu-holder:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    border-radius: 50px;
+    background-color: #f1f4f7;
+}
+
+.menu-holder ul.main-menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.menu-holder ul.main-menu li {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.menu-holder ul.main-menu li a {
+    display: inline-block;
+    width: 100%;
+    padding: 8px;
+    text-decoration: none;
+    color: #8da3b9;
+    background-color: #ffffff;
+    padding-left: 20px;
+    border-radius: 50px;
+}
+
+.menu-holder ul.main-menu li a:hover,
+.menu-holder ul.main-menu li a:focus,
+.menu-holder ul.main-menu li a.active {
+    background-color: #f1f4f7;
+    color: #a81226;
+    ;
+}
+
+.menu-holder ul.main-menu li a .fa {
+    margin-right: 10px;
+    color: #a81226;
+    ;
+    font-size: 16px;
+}
+
+.content {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+}
+
+.content img {
+    width: 100%;
+    max-width: 90%;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.content h3 {
+    font-weight: bold;
+    font-size: 22px;
+    color: #444146;
+}
+
+.content p {
+    font-size: 17px;
+    color: #726D75;
+}
+
+.content ul {
+    font-size: 16px;
+    color: #726D75;
+    padding: 0;
+    margin: 0;
+    padding-left: 20px
+}
+
+#footer {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 15px;
+}
+
+.blne-logo-holder {
+    display: inline-block;
+    padding: 12px;
+}
+
+.blne-logo-holder img {
+    width: 37px;
+    margin-top: -30px;
+}
+
+.doc-info {
+    font-size: 13px;
+    line-height: 14px;
+    color: #8da3b9;
+    display: inline-block;
+}
+
+.doc-info b {
+    color: #a81226;
+    font-weight: bold;
+}
+
+/*------------------------------------------------------------------
+    Responsive Styles
+-------------------------------------------------------------------*/
+
+/* Other screens styles modifications */
+@media screen and (min-width: 1200px) {
+}
+
+@media screen and (min-width: 992px) {
+    .menu-holder {
+        top: 0 !important;
+    }
+    .main-menu {
+        position: fixed;
+        transition: all 0.3s ease 0.0s;
+    }
+}
+
+@media screen and (max-width: 768px) {
+        .main-menu {
+        /* position: relative; */
+    }
+}
+
+@media screen and (min-width: 480px) {
+
+}

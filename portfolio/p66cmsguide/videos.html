@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+    <title>CMS Guide</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/prettify.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+    </script>
+    <script> 
+        $(function(){
+            $("#header").load("header.html"); 
+            $("#footer").load("footer.html"); 
+        });
+    </script> 
+</head>
+
+<body>
+    <div id="header"></div>
+    <div id="content" class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-md-3" style="padding:0;">
+                <div class="menu-holder">
+                    <ul class="main-menu">
+                        <li><a href="#addmarketer" class="active"><i class="fa fa-angle-right" aria-hidden="true"></i>Adding a Marketer</a></li>
+                        <li><a href="#addprod"><i class="fa fa-angle-right" aria-hidden="true"></i>Adding a Product</a></li>
+                        <hr />
+                        <li><a href="index.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Home</a></li>
+                        <li><a href="faq.html"><i class="fa fa-angle-right" aria-hidden="true"></i>FAQ</a></li>
+                        <li><a href="videos.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Videos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-9 content">
+                <h3 id="addmarketer">Adding a Marketer</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/U-ZSMj_CCRs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <h3 id="addprod">Adding a Product</h3>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/U-ZSMj_CCRs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            
+                                            <hr />
+                            <h3 id="home"><a href="index.html">Home</a></h3>
+                            <h3 id="faq"><a href="faq.html">FAQ</a></h3>
+                            <h3 id="vids"><a href="videos.html">Videos</a></h3>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+        <a id="back-to-top" href="#header"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/prettify.js"></script>
+        <script src="assets/js/main.js"></script>
+</body>
+
+</html>
