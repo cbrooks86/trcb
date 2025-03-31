@@ -19,7 +19,7 @@ heroShinker();
 
 
 // Background Image Randomizer
-var bgCount = 73;
+var bgCount = 79;
 
 function bgRandomizer() {
     var num = Math.ceil(Math.random() * bgCount);
