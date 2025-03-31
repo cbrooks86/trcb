@@ -126,6 +126,14 @@ main {
   margin: auto;
 }
 
+/* 1-column layout support */
+main.single-column {
+  display: block;
+  max-width: 800px;
+  padding: 20px;
+}
+
+
 section {
   grid-area: main;
 }
@@ -204,6 +212,17 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+  
+  body {
+    padding: 0px;
+  }
+  
+  .single-column {
+    display: block !important;
+    grid-template-areas: unset;
+    grid-template-columns: unset;
+  }
+
   .page-content {
     display: grid;
     grid-template-areas:
@@ -211,9 +230,5 @@ footer {
     grid-template-columns: 1fr 2fr;
     grid-gap: 10px;
     padding: 10px;
-  }
-
-  body {
-    padding: 0px;
   }
 }
