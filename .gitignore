@@ -1,0 +1,14 @@
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+._*
+<<<<<<< HEAD
+/.idea
+*.sql
+
+# VS Code Workspace File #
+##########################
+*.code-workspace
