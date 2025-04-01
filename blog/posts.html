@@ -106,7 +106,9 @@
     <script src="../js/blog.js"></script>
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();
-        loadBlogPost(); // load based on query param
+        document.addEventListener("DOMContentLoaded", () => {
+          loadBlogPost(); // run after DOM is ready
+        });
       </script>
       
 </body>
