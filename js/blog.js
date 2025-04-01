@@ -14,7 +14,7 @@ async function fetchPosts() {
       const card = document.createElement('div');
       card.className = 'blog-card';
       card.innerHTML = `
-        <img src="${post.thumbnail}" alt="${post.title} thumbnail" class="blog-card__image">
+        <a href="posts.html?slug=${post.slug}"><img src="${post.thumbnail}" alt="${post.title} thumbnail" class="blog-card__image"></a>
         <div class="blog-card__content">
           <h2 class="blog-card__title">
             <a href="posts.html?slug=${post.slug}">${post.title}</a>
