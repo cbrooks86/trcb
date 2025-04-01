@@ -23,7 +23,7 @@ var bgCount = 79;
 
 function bgRandomizer() {
     var num = Math.ceil(Math.random() * bgCount);
-    document.getElementById('hero-nav').setAttribute('style', `background-image: url(img/${num}.jpg);`);
+    document.getElementById('hero-nav').setAttribute('style', `background-image: url(../img/${num}.jpg);`);
 }
 bgRandomizer()
 

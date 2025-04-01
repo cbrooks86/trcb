@@ -1,0 +1,17 @@
+[
+    {
+      "slug": "first-post",
+      "title": "My First Blog Post",
+      "content": "<p>This is my first blog post. Excited to start publishing!</p>",
+      "thumbnail": "/img/thumb1.jpg",
+      "description": "Exciting first post introducing the blog and what to expect."
+    },
+    {
+      "slug": "second-post",
+      "title": "Exploring the Tech Stack",
+      "content": "<p>Here’s a deep dive into how the site is built using vanilla JS, JSON, and CSS Grid.</p>",
+      "thumbnail": "/img/thumb2.jpg",
+      "description": "How this blog was built with JSON and JS — a developer's guide."
+    }
+  ]
+  
