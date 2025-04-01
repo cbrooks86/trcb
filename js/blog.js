@@ -41,7 +41,6 @@ async function fetchPosts() {
   
     // Inject SEO/meta content
     document.title = post.title;
-    document.getElementById('page-title').textContent = post.title;
     document.getElementById('meta-description').setAttribute('content', post.description);
     document.getElementById('og-title').setAttribute('content', post.title);
     document.getElementById('og-description').setAttribute('content', post.description);

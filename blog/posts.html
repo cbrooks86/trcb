@@ -47,27 +47,31 @@
 
 <body>
     <header id="hero-nav">
-        <section class="hero-nav__inner">
-            <h1 id="post-title">Loading...</h1>
-        </section>
+      <section class="hero-nav__inner">
+        <h1 id="post-title">Loading...</h1>
+      </section>
     </header>
+  
     <main class="page-content single-column">
-
-        <section id="post-content">
-            <!-- Blog content loads here -->
-        </section>
+      <section id="post-content">
+        <!-- Blog content loads here -->
+      </section>
     </main>
-    <footer>TheRealChrisBrooks.com. All images &copy; 2020-<span id="year"></span> Chris&nbsp;Brooks.</footer>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  
+    <footer>
+      TheRealChrisBrooks.com. All images &copy; 2020-<span id="year"></span> Chris&nbsp;Brooks.
+    </footer>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="../js/script.js"></script>
     <script src="../js/blog.js"></script>
     <script>
-        document.getElementById("year").textContent = new Date().getFullYear();
-        document.addEventListener("DOMContentLoaded", () => {
-            loadBlogPost(); // run after DOM is ready
-        });
+      document.getElementById("year").textContent = new Date().getFullYear();
+      document.addEventListener("DOMContentLoaded", () => {
+        loadBlogPost(); // run after DOM is ready
+      });
     </script>
-
-</body>
+  </body>
+  
 
 </html>
