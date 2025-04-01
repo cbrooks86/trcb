@@ -20,7 +20,7 @@ async function fetchPosts() {
             <a href="posts.html?slug=${post.slug}">${post.title}</a>
           </h2>
           <p class="blog-card__description">${post.description}</p>
-          <a class="blog-card__link" href="post.html?slug=${post.slug}">Read More →</a>
+          <a class="blog-card__link" href="posts.html?slug=${post.slug}">Read More →</a>
         </div>
       `;
       container.appendChild(card);
