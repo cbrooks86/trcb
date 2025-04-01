@@ -17,7 +17,7 @@ async function fetchPosts() {
         <img src="${post.thumbnail}" alt="${post.title} thumbnail" class="blog-card__image">
         <div class="blog-card__content">
           <h2 class="blog-card__title">
-            <a href="post.html?slug=${post.slug}">${post.title}</a>
+            <a href="posts.html?slug=${post.slug}">${post.title}</a>
           </h2>
           <p class="blog-card__description">${post.description}</p>
           <a class="blog-card__link" href="post.html?slug=${post.slug}">Read More →</a>
