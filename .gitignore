@@ -4,8 +4,10 @@
 ehthumbs.db
 Icon?
 Thumbs.db
+
+# Don't Share These #
+######################
 ._*
-<<<<<<< HEAD
 /.idea
 *.sql
 
